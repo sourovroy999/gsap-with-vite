@@ -67,3 +67,13 @@ ScrollTrigger.create({
 //   rotation:360,
 // })
 
+gsap.utils.toArray('.shutter').forEach((shutter, i)=>{
+  ScrollTrigger.create({
+    trigger: shutter,
+    start:"top top",
+    pin:true,
+    pinSpacing:false,
+    
+
+  })
+})
